@@ -6,18 +6,16 @@ export const HeaderSphere = () => {
         style={{
           background:
             "linear-gradient(259.71deg, #9AE8C7 61.25%, #177E89 92.3%)",
-          filter: "blur(15px)",
-           transition:" width 0.3s, height 0.3s",
-           zIndex: -10
+          filter: "blur(50px)",
+          zIndex: -10,
         }}
       />
-     <div
+      <div
         className="absolute rounded-[50%] h-[60vh] w-[450px] md:h-[450px] md:w-[550px] top-[-80px] right-[50px] md:right-[100px] lg:w-[55vw] lg:h-[630px] lg:top-[-90px]"
         style={{
           background: "rgba(23, 126, 137, 0.78)",
-          filter: " blur(50px)",
-           transition:" width 0.3s, height 0.3s",
-            zIndex: -10
+          filter: "blur(50px)",
+          zIndex: -10,
         }}
       />
 
@@ -26,18 +24,16 @@ export const HeaderSphere = () => {
         style={{
           background: "#9AE8C7",
           filter: "blur(15px)",
-          transform: "rotate(-25.42deg)",
-           zIndex: -10
+          zIndex: -10,
         }}
       />
 
-        <div
+      <div
         className="absolute rounded-[50%] bottom-0 right-[3%] w-[100px] h-[200px] sm:w-[330px] sm:h-[325px]"
         style={{
           background: "rgba(23, 126, 137, 0.54)",
           filter: "blur(10px)",
-          transform: "rotate(-25.42deg)",
-           zIndex: -10
+          zIndex: -10,
         }}
       />
     </>

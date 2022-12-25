@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { GlassBackground, HeaderSphere } from "../elements";
-import SubjectImg from "../../public/icons/subject.svg";
+import { GlassBackground, HeaderSphere, Socials } from "../elements";
+import SubjectImg from "../../public/img/subject.png";
 import Subject2Img from "../../public/icons/subject2.svg";
 import ArrowIcon from "../../public/icons/arrow-right.svg";
-
+import LinkIcon from "../../public/icons/link.svg";
 
 import NavBar from "./Nav";
-import { socials } from "./constants";
 
 const Header = () => {
   return (
@@ -25,27 +24,20 @@ const Header = () => {
               <h1 className=" text-white font-semibold text-md sm:text-lg uppercase">
                 Hello, I&#39;m Elshaday
               </h1>
-              <h1 className="font-heading text-6xl sm:text-7xl xl:text-8xl text-center md:text-left hollow">WEB DEVELOPER,</h1>
+              <h1 className="font-heading text-6xl sm:text-7xl xl:text-8xl text-center md:text-left hollow">
+                WEB DEVELOPER,
+              </h1>
               <h1 className="font-heading text-4xl sm:text-6xl text-center md:text-left text-white">
                 UI/UX Designer, Creative Writer
               </h1>
 
-              <p className="text-center text-xl sm:text-2xl md:text-left text-black font-extralight mt-3 leading-6">
-                A multi-versed software developer excited to embark on new projects!
+              <p className="text-center text-xl sm:text-2xl md:text-left text-black font-thin mt-3 mb-10 leading-6">
+                A multi-versed software developer excited to embark on new
+                projects!
               </p>
 
               {/* Social Media  */}
-              <div className="flex justify-between items-center mt-10 w-auto">
-                {socials.map((item, index) => (
-                  <div
-                    className="flex items-center justify-center h-12 w-12 rounded-[50%] bg-primary mr-3"
-                    key={index}
-                  >
-                    {" "}
-                    <Image alt="socials" src={item.img} />{" "}
-                  </div>
-                ))}
-              </div>
+              <Socials iconSize="regular" />
             </div>
           </div>
           {/* About me */}
@@ -67,13 +59,15 @@ const Header = () => {
                 suscipit massa. Donec vel bibendum nunc.
               </p>
 
-              <button className="flex items-center justify-center bg-primary rounded-sm h-10 w-32 font-heading uppercase text-white text-xl mt-5">
-               <Image className='h-6 w-6' alt='arrow' src={ArrowIcon} />
-                Resume
-              </button>
+              <a href="files/CV.pdf" target="_blank" rel="noopener noreferrer">
+                <button className="flex items-center justify-center bg-primary rounded-sm h-12 w-32 font-heading uppercase text-white text-xl mt-5 ">
+                  <Image className="h-6 w-6 mr-1" alt="arrow" src={LinkIcon} />
+                  Resume
+                </button>
+              </a>
             </div>
-            <div className="hidden md:flex items-end md:-mb-36 lg:-mb-16 md:w-[250px] ">
-                <Image alt='Subj' src={Subject2Img} />
+            <div className="hidden md:flex items-end md:-mb-36 lg:-mb-16 md:w-[250px]">
+              <Image alt="Subj" src={Subject2Img} />
             </div>
           </div>
         </div>

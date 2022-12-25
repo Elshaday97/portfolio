@@ -15,6 +15,10 @@ module.exports = {
         gray: "#C9CBCA",
         white: "#fff",
       },
+      boxShadow: {
+        "2xl": "0px 0px 20px 2px #E3E9FB",
+        "3xl": "0px 0px 50px 2px #E3E9FB",
+      },
     },
     fontFamily: {
       sans: ["Raleway", "sans-serif"],
