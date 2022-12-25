@@ -1,5 +1,5 @@
 import { FooterShere, HeaderSphere } from "./Sphere";
 import GlassBackground from "./GlassBackground";
-export { FooterShere, HeaderSphere, GlassBackground };
-
-// Text, Button, Card,
+import Card from "./Card";
+import Socials from "./Socials";
+export { FooterShere, HeaderSphere, GlassBackground, Card, Socials };
